@@ -1,15 +1,14 @@
-
 // Mensagem de boas-vindas
 window.addEventListener("load", () => {
     alert("Bem-vindo ao Agroturismo Paraná! Explore destinos e experiências rurais.");
 });
 
-// Mostra informações dos destinos ao clicar
-const destinos = document.querySelectorAll("#destinos-list li");
+// Mostrar informações ao clicar nos cards
+const cards = document.querySelectorAll(".card");
 
-destinos.forEach(destino => {
-    destino.addEventListener("click", () => {
-        const info = destino.getAttribute("data-info");
+cards.forEach(card => {
+    card.addEventListener("click", () => {
+        const info = card.getAttribute("data-info");
         alert(info);
     });
 });
