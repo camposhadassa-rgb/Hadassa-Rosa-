@@ -10,7 +10,7 @@
 
 <header>
     <h1>Agroturismo Paraná</h1>
-    <p>Explore o turismo rural e a cultura agrícola do Paraná</p>
+    <p>Descubra o turismo rural e a cultura agrícola do Paraná</p>
 </header>
 
 <nav>
@@ -19,7 +19,7 @@
     <a href="#contato">Contato</a>
 </nav>
 
-<section id="sobre">
+<section id="sobre" class="container">
     <h2>Sobre o Agroturismo</h2>
     <p>
         O Paraná é referência em agronegócio e turismo rural. 
@@ -27,16 +27,25 @@
     </p>
 </section>
 
-<section id="destinos">
+<section id="destinos" class="container">
     <h2>Destinos em Destaque</h2>
-    <ul id="destinos-list">
-        <li data-info="Campos Gerais: fazendas históricas e belas paisagens rurais.">Campos Gerais</li>
-        <li data-info="Colombo: vinícolas familiares e influência italiana.">Colombo</li>
-        <li data-info="Norte Pioneiro: tradições do café e fazendas centenárias.">Norte Pioneiro</li>
-    </ul>
+    <div class="cards">
+        <div class="card" data-info="Campos Gerais: fazendas históricas e belas paisagens rurais.">
+            <h3>Campos Gerais</h3>
+            <p>Clique para saber mais</p>
+        </div>
+        <div class="card" data-info="Colombo: vinícolas familiares e influência italiana.">
+            <h3>Colombo</h3>
+            <p>Clique para saber mais</p>
+        </div>
+        <div class="card" data-info="Norte Pioneiro: tradições do café e fazendas centenárias.">
+            <h3>Norte Pioneiro</h3>
+            <p>Clique para saber mais</p>
+        </div>
+    </div>
 </section>
 
-<section id="contato">
+<section id="contato" class="container">
     <h2>Contato</h2>
     <form id="contato-form">
         <input type="text" placeholder="Nome" required>
